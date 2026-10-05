@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self'">
+<title>Argentum Ataraxia</title>
+<meta name="description" content="Argentum Ataraxia makes calm, tactile apps. Oozone: virtual slime.">
+<style>
+  :root { --ink: #27272a; --soft: #52525b; --line: #e4e4e7; --bg: #fafafa; --card: #ffffff; --accent: #0f766e; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #f4f4f5; --soft: #a1a1aa; --line: #3f3f46; --bg: #18181b; --card: #222225; --accent: #5eead4; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100dvh; background: var(--bg); color: var(--ink);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    display: flex; align-items: center; justify-content: center; }
+  main { width: 100%; max-width: 560px; padding: 56px 20px; }
+  .studio { font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--soft); margin: 0 0 40px; }
+  .app { display: flex; gap: 22px; align-items: center; padding: 22px; border: 1px solid var(--line);
+    border-radius: 28px; background: var(--card); }
+  .app img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
+  h1 { font-size: 26px; margin: 0; letter-spacing: -0.02em; }
+  .app p { margin: 4px 0 0; color: var(--soft); }
+  .soon { display: inline-block; margin-top: 10px; font-size: 13px; padding: 3px 12px; border-radius: 99px;
+    border: 1px solid var(--line); color: var(--soft); }
+  nav { margin-top: 36px; display: flex; gap: 22px; flex-wrap: wrap; font-size: 15px; }
+  a { color: var(--accent); }
+  @media (max-width: 420px) { .app { flex-direction: column; align-items: flex-start; } }
+</style>
+</head>
+<body>
+<main>
+  <p class="studio">Argentum Ataraxia</p>
+  <article class="app">
+    <img src="oozone/icon.png" alt="Oozone app icon: a translucent teal blob of slime and a droplet">
+    <div>
+      <h1>Oozone</h1>
+      <p>Virtual slime: squish, stretch and fling it around a glass box.</p>
+      <span class="soon">Coming soon to Google Play</span>
+    </div>
+  </article>
+  <nav>
+    <a href="oozone/privacy.html">Oozone privacy policy</a>
+    <a href="oozone/privacy.html#es">Política de privacidad</a>
+    <a href="mailto:argentumgraphice+policy@gmail.com">Contact</a>
+  </nav>
+</main>
+</body>
+</html>
